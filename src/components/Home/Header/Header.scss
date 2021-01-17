@@ -1,0 +1,16 @@
+$headerLogo: cursive;
+$headerPadding:60px;
+
+.header{
+  padding-left: $headerPadding;
+  font-family: $headerLogo;
+}
+.contact_style{
+  margin-right: $headerPadding;
+}
+
+.header_section{
+  background-image: url(../../../images/blurChiair.png);
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,29 @@
+.contact_wrapper{
+  padding: 20px 7px;
+  color: #fff;
+  text-align: center;
+  height: 50vh;
+  background-color: #3a4256;
+}
+.contact_wrapper h5{
+  color: #1cc7c1;
+}
+textarea{
+  padding: 8px;
+  outline: none;
+}
+.contact_wrapper input{
+  outline: none;
+  border: none;
+  width: 430px;
+  padding: 8px;
+  margin-bottom: 13px;
+}
+.submit_btn{
+  outline: none;
+  padding: 7px 40px;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+}

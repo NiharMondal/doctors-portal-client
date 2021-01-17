@@ -1,0 +1,11 @@
+.info_wrapper{
+  display: flex;
+}
+.img{
+  margin-right: 20px;
+}
+
+.name h6{
+  margin-top: 5px;
+  color: #1cc7c1;
+}

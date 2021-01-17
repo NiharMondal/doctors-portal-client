@@ -1,0 +1,33 @@
+.appointment_section{
+  position: relative;
+  margin-top: 70px;
+  height: 330px;
+  background-color: #3a4256;
+  background-position: center;
+  background-size: cover;
+}
+
+.appointment_img img{
+  position: absolute;
+  bottom: 0;
+  width: 450px;
+}
+.appointment_text{
+  padding: 20px 4px;
+}
+.appointment_text h6{
+  color: #28e2a4;
+}
+.appoint_btn{
+  border: none;
+  padding: 3px 12px;
+  font-size: 17px;
+  color: #f0f8ff;
+  font-weight: 500;
+  background: linear-gradient( to left, #2be9e9, #1ccc91 );
+}
+@media screen and(max-width: "400px"){
+  .appointment_img {
+    display: none;
+  }
+}

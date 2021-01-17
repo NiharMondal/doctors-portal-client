@@ -1,0 +1,12 @@
+.testimonial_part{
+  margin-top: 10px;
+  background-image: url(../../../images/quote.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.outer_part{
+  padding: 30px 0;
+}
+.outer_part h5{
+  color: #1cc7c1;
+}

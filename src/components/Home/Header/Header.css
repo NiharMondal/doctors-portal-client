@@ -1,0 +1,15 @@
+.header {
+  padding-left: 60px;
+  font-family: cursive;
+}
+
+.contact_style {
+  margin-right: 60px;
+}
+
+.header_section {
+  background-image: url(../../../images/blurChiair.png);
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=Header.css.map */

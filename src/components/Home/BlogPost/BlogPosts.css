@@ -1,0 +1,17 @@
+
+.upper_part{
+  display: flex;
+}
+.img-part{
+  margin-right: 20px;
+}
+
+.card_wrapper:hover{
+  background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+  color: #fff !important;
+  background-size: 100%;
+  transition:  .1s  all ease-in-out !important;
+}
+.card_wrapper:hover .img-part{
+  display: none;
+}

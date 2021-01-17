@@ -1,0 +1,11 @@
+.description p{
+  font-size: 17px;
+}
+.learn_btn{
+  border: none;
+  padding: 3px 12px;
+  font-size: 17px;
+  color: #f0f8ff;
+  font-weight: 500;
+  background: linear-gradient( to left, #2be9e9, #1ccc91 );
+}

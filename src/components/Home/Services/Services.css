@@ -1,0 +1,11 @@
+.heading_part {
+  font-family:  Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding-top: 50px ;
+  color: #1cc7c1;
+}
+.heading_part h2{
+  font-family: serif;
+  color: #3a4256;
+  font-weight: 600;
+}

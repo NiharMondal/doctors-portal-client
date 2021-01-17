@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrap_navbar{
+  margin: 0px 50px 0 60px;
+}
+.navbar_brand{
+  font-family: cursive;
+}
+.nav_link{
+  color: rgb(22, 19, 19) !important;
+  margin: 0 11px;
+  font-weight: 500;
+  font-size: 1.07em;
+}
