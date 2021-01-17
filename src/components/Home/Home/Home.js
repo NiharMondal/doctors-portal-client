@@ -13,7 +13,8 @@ import Footer from '../Footer/Footer';
 
 const Home = () => {
   return (
-    <div className="home_wrapper" id="home">
+    <div className="home_wrapper"
+      id="home">
       <div className="header_section">
         <Header />
         <MBody />

@@ -3,7 +3,8 @@ import React from 'react';
 import './Contact.css'
 const Contact = () => {
   return (
-    <Grid container className="container">
+    <Grid container id="contact"
+      className="container">
       <Grid item md={12} className="contact_wrapper">
         <h5>Contact Us</h5>
         <h3>Always Connect With Us</h3>

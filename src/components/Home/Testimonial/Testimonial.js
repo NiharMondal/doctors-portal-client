@@ -29,7 +29,7 @@ const patientsRef = [
 
 const Testimonial = () => {
   return (
-    <section className="container testimonial_part ">
+    <section className="container testimonial_part " id="reviews">
       <div className="outer_part">
         <h5 className="pt-5">Testimonial</h5>
         <h2>What's Our Patients <br />Says</h2>
