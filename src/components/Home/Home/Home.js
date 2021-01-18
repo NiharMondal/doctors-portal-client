@@ -9,7 +9,7 @@ import Appointment from '../Appointment/Appointment';
 import Testimonial from '../Testimonial/Testimonial';
 import Blogs from '../Blogs/Blogs';
 import Contact from '../Contact/Contact';
-import Footer from '../Footer/Footer';
+import Footer from '../../shared/Footer/Footer';
 
 const Home = () => {
   return (
