@@ -26,8 +26,3 @@
   font-weight: 500;
   background: linear-gradient( to left, #2be9e9, #1ccc91 );
 }
-@media screen and(max-width: "400px"){
-  .appointment_img {
-    display: none;
-  }
-}

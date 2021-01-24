@@ -1,17 +1,17 @@
-
-.upper_part{
-  display: flex;
+.card_part{
+  padding: 3px 10px;
 }
-.img-part{
-  margin-right: 20px;
+.text_part{
+ padding: 10px 20px;
 }
-
-.card_wrapper:hover{
-  background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
-  color: #fff !important;
-  background-size: 100%;
-  transition:  .1s  all ease-in-out !important;
+.combine{
+  padding-top: 10px;
 }
-.card_wrapper:hover .img-part{
+.card_part:hover img{
   display: none;
+}
+.card_part:hover{
+  background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+    color: #fff !important;
+    transition:  .1s  all ease-in-out !important;
 }

@@ -1,0 +1,19 @@
+form h2{
+  text-align: center;
+  color: #1cc7c1;
+}
+form select{
+  width: 100%;
+  margin-bottom: 6px;
+}
+form input{
+  padding: 5px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.close_btn{
+  padding: 5px 13px;
+  background-color: red;
+  float: right;
+  margin-bottom: 2px;
+}

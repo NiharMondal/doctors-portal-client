@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import {Grid} from '@material-ui/core'
 import InfoCard from '../InfoCard.js/InfoCard';
 import {faClock,faMapMarker,faPhone} from '@fortawesome/free-solid-svg-icons'

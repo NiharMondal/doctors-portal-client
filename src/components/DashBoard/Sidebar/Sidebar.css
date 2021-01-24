@@ -1,0 +1,21 @@
+.sidebar_wrapper{
+  height: 100vh;
+  padding: 50px 20px;
+  background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+}
+.sidebar{
+  cursor: pointer;
+  color:aliceblue !important;
+  font-size: large;
+  padding: 5px 2px;
+  display: flex;
+}
+.icon{
+  font-size: 18px;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+.signout{
+  position: absolute;
+  bottom: 50px;
+}

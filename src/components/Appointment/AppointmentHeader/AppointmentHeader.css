@@ -1,0 +1,11 @@
+.card_wrapper{
+  padding: 5px 0;
+  width: 400px;
+  margin: 0 auto;
+}
+.react_calender{
+  padding: 10px;
+  width: 100% !important;
+  min-width: 100%;
+  border: none !important;
+}

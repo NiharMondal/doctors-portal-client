@@ -5,11 +5,12 @@ import Header from '../Header/Header';
 import MBody from '../MBody/MBody';
 import Services from '../Services/Services';
 import SubSection from '../subSection/SubSection';
-import Appointment from '../Appointment/Appointment';
+
 import Testimonial from '../Testimonial/Testimonial';
 import Blogs from '../Blogs/Blogs';
 import Contact from '../Contact/Contact';
 import Footer from '../../shared/Footer/Footer';
+import MakeAppointment from '../MakeAppointment/MakeAppointment';
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       <Services />
       <SubSection />
       <br/>
-      <Appointment />
+      <MakeAppointment />
       <Testimonial />
       <Blogs />
       <Contact />

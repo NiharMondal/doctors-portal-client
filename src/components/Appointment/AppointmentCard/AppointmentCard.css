@@ -1,0 +1,18 @@
+.card-wrapper{
+  padding: 5px 0 12px;
+}
+.card-wrapper h4{
+  color: #1cc1c7;
+
+}
+.card-wrapper p{
+  font-size: 17px;
+}
+.card-wrapper button{
+  outline: none !important;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border: none;
+  background: linear-gradient( to left, #19d3ae, #0fcfec );
+}

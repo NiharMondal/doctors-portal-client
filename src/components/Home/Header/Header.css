@@ -2,7 +2,12 @@
   padding-left: 60px;
   font-family: cursive;
 }
-
+.nav_wrapper{
+  font-size: 17px;
+}
+.nav_wrapper .appointment:hover{
+  text-decoration: none !important;
+}
 .contact_style {
   margin-right: 60px;
 }

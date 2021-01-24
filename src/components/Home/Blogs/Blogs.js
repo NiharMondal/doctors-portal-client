@@ -31,19 +31,17 @@ const blogData = [
 
 const Blogs = () => {
     return (
-       <section className="blogs my-5" id="blog">
-           <div className="container">
-               <div className="section-header text-center">
-                    <h5 className="text-uppercase">our blog</h5>
-                    <h1>From Our Blog News</h1>
-               </div>
-                <Grid container spacing={3}className="card-deck mt-5">
-                    {
-                        blogData.map(blog => <BlogPost blog={blog} key={blog.title}/>)
-                    }
-               </Grid>
+        <section className="container blogs">
+            <div className="text-center">
+                <h5 className="header-part">Our Blog</h5>
+                <h2>From Our Blog Views</h2>
            </div>
-       </section>
+            <Grid container spacing={2}>
+                {
+                    blogData.map(data => <BlogPost data={data} key={data.id} />)
+                }
+            </Grid>
+        </section>
     );
 };
 

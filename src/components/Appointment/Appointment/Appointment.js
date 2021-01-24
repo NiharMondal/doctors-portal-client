@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Header from '../../Home/Header/Header';
+import Footer from '../../shared/Footer/Footer';
+import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
+import BookAppointment from '../BookAppointment/BookAppointment';
 
 const Appointment = () => {
+  const [selectedDate, setSelectedDate]=useState(new Date())
+  const handleDateChange = date => {
+   setSelectedDate(date)
+
+  }
   return (
     <div>
-      <h1>Appointment page</h1>
+      <Header />
+      <AppointmentHeader handleDateChange={handleDateChange} />
+      <BookAppointment date={ selectedDate}/>
+     <Footer/>
     </div>
   );
 };
