@@ -17,6 +17,7 @@
 }
 .appointment_btn{
   padding: 5px 16px;
+  outline-color: #1ccc91 !important;
   font-size: 18px;
   font-weight: 500;
   border: none;

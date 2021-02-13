@@ -1,0 +1,42 @@
+.login_btn{
+  border: none;
+  border-radius: 3px;
+  outline-color: aqua;
+  font-size: large;
+  font-weight: 500;
+  padding: 6px 0;
+  background-color:#1877f2;
+  color: #ffffff;
+  width: 100%;
+}
+.facebook{
+  cursor: pointer;
+  background-color: #da3b20 !important;
+ 
+}
+.facebook_icon{
+  font-size: 30px;
+  margin-top: 2px;
+}
+.facebook h4{
+  color: #ffffff !important;
+}
+.google h4{
+  color: #ffffff !important;
+}
+.google{
+  cursor: pointer;
+  background-color: #0ec20e !important;
+
+}
+.facebook:hover{
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.google:hover{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.google_icon{
+  font-size: 28px;
+  margin-top: 2px;
+}
+

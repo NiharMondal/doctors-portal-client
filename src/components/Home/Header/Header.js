@@ -6,17 +6,25 @@ const Header = () => {
   return (
     <>
       <Navbar expand="lg">
-        <Navbar.Brand className="header" href="#home">Dr.</Navbar.Brand>
+        <Link to="/">
+        <Navbar.Brand className="header" href="/">Dr.</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav_wrapper">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Link to="/appointment">
-              <Nav.Link className="appointment" href="#appointment">Appointment</Nav.Link>
+            <Link to="/" className="nav_link">
+            <Nav.Link href="/">Home</Nav.Link>
             </Link>
-            <Nav.Link href="#services">Dental Services</Nav.Link>
-            <Nav.Link href="#reviews">Reviews</Nav.Link>
-            <Nav.Link href="#blog">Blog</Nav.Link>
+            <Link className="nav_link" to="/appointment">
+              <Nav.Link href="/appointment">Appointment</Nav.Link>
+            </Link>
+            <Link className="nav_link" to="/dashboard">
+            <Nav.Link href="/dashboard"> Dashboard</Nav.Link>
+            </Link>
+            <Link className="nav_link" to="/admin">
+            <Nav.Link href="/admin">Admin</Nav.Link>
+            </Link>
+            <Nav.Link href="#blog">Blogs</Nav.Link>
             <Nav.Link
               className="contact_style"
               href="#contact">Contact Us</Nav.Link>

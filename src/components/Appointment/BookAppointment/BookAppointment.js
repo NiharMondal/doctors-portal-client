@@ -1,7 +1,8 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
-import './BookAppointment.css'
+import './BookAppointment.css';
+
 const BookAppointment = ({ date }) => {
   const bookingData = [
     {

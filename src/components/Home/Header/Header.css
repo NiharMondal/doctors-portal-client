@@ -17,4 +17,7 @@
   background-position: center;
   background-size: cover;
 }
+.nav_link:hover{
+  text-decoration: none;
+}
 /*# sourceMappingURL=Header.css.map */
