@@ -1,17 +1,17 @@
 import React from 'react';
-import './Home.css'
+import Footer from '../../shared/Footer/Footer';
+import Blogs from '../Blogs/Blogs';
 import BussinessInfo from '../BussinessInfo/BussinessInfo';
+import Contact from '../Contact/Contact';
+import Doctors from '../Doctors/Doctors';
 import Header from '../Header/Header';
+import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import MBody from '../MBody/MBody';
 import Services from '../Services/Services';
 import SubSection from '../subSection/SubSection';
-
 import Testimonial from '../Testimonial/Testimonial';
-import Blogs from '../Blogs/Blogs';
-import Contact from '../Contact/Contact';
-import Footer from '../../shared/Footer/Footer';
-import MakeAppointment from '../MakeAppointment/MakeAppointment';
-import Doctors from '../Doctors/Doctors';
+import './Home.css';
+
 
 const Home = () => {
   return (

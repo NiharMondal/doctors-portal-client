@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Grid container id="contact"
       className="container">
-      <Grid item md={12} className="contact_wrapper">
+      <Grid item md={12} xs={12} sm={ 12}className="contact_wrapper">
         <h5>Contact Us</h5>
         <h3>Always Connect With Us</h3>
         <br/>

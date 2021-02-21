@@ -19,10 +19,10 @@ const Dashboard = () => {
       <Grid item md={9} sm={6}>
         <Switch>
           <Route exact path={path}>
-            <Default/>
+            <Default />
           </Route>
           <Route path={`${path}/:diffSec`}>
-            <DiffSection date={selectedDate} handleDateChange={ handleDateChange}/>
+            <DiffSection date={selectedDate} handleDateChange={handleDateChange} />
           </Route>
         </Switch>
       </Grid>

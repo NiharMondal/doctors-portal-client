@@ -3,7 +3,7 @@ import React from 'react';
 const Default = () => {
   return (
     <div>
-      <h1>I am default</h1>
+      <h1>Please select an option</h1>
     </div>
   );
 };

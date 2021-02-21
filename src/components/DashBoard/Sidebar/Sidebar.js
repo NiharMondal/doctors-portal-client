@@ -1,10 +1,9 @@
+import { faCalendar, faCog, faFileAlt, faGripHorizontal, faHome, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useEffect, useState } from 'react';
-import './Sidebar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCog, faCalendar, faUsers, faFileAlt, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
-import {faHome} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
+import './Sidebar.css';
 const Sidebar = ({ url }) => {
   const [loggedIn, seLoggedIn] = useContext(UserContext);
   const [isDoctor, setIsDoctor] = useState(false);
@@ -16,17 +15,17 @@ const Sidebar = ({ url }) => {
     })
       .then(res => res.json())
       .then(data => setIsDoctor(data));
-    
-  },[])
+
+  }, [])
   return (
-    
+
     <ul className="list_wrapper">
       <li className="mb-5"> <Link className="home" to="/"><FontAwesomeIcon icon={faHome} /> Home</Link></li>
-      
+
       { isDoctor && <li> <Link className="link" to={`${url}/all-appointment`}><FontAwesomeIcon className="faIcon" icon={faGripHorizontal} />Dashboard </Link></li>}
-      
+
       <li> <Link className="link" to={`${url}/my-appointment`}><FontAwesomeIcon icon={faCalendar} className="faIcon" />Appointment </Link></li>
-     { isDoctor && <div>
+      { isDoctor && <div>
         <li> <Link className="link" to={`${url}/all-patients`}><FontAwesomeIcon icon={faUsers} className="faIcon" />Patients </Link></li>
         <li> <Link className="link" to={`${url}/prescription`}><FontAwesomeIcon icon={faFileAlt} className="faIcon" />Prescription </Link></li>
         <li> <Link className="link" to={`${url}/setting`}><FontAwesomeIcon icon={faCog} className="faIcon" />Setting </Link></li>

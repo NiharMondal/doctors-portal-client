@@ -2,9 +2,12 @@ import React from 'react';
 import './Header.css'
 import {Navbar, Nav}from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
 const Header = () => {
   return (
-    <>
+    <Grid container>
+      <Grid item md={12} sm={12} xs={12}>
+   
       <Navbar expand="lg">
         <Link to="/">
         <Navbar.Brand className="header" href="/">Dr.</Navbar.Brand>
@@ -30,8 +33,9 @@ const Header = () => {
               href="#contact">Contact Us</Nav.Link>
           </Nav>   
         </Navbar.Collapse>
-      </Navbar>
-    </>
+        </Navbar>   
+      </Grid>
+    </Grid>
   );
 };
 
