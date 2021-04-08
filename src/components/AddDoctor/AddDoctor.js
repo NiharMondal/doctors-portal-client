@@ -5,6 +5,7 @@ const AddDoctor = () => {
   const [info, setInfo] = useState({});
   const [file, setFile] = useState(null);
 
+
   const handleBlur = (e) => {
     const newInfo = { ...info }
     newInfo[e.target.name] = e.target.value;
@@ -23,15 +24,14 @@ const AddDoctor = () => {
     formData.append('email', info.email);
     formData.append('phone', info.phone);
 
-    fetch("http://localhost:4000/add-doctor", {
+    fetch("https://fathomless-journey-65246.herokuapp.com/add-doctor", {
       method: 'post',
       body: formData
     })
       .then(res => res.json())
       .then(data => {
-      setInfo(data)
-      
-    })
+        setInfo(data);
+      });
   }
 
   return (

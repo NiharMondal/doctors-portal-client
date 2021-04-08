@@ -17,7 +17,7 @@ const DashAppointment = () => {
   };
   const [appointments, setAppointments] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:4000/appointments-list', {
+    fetch('https://fathomless-journey-65246.herokuapp.com/appointments-list', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({date: selectedDate, email: loggedIn.email })

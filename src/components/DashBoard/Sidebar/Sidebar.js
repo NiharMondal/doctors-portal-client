@@ -8,7 +8,7 @@ const Sidebar = ({ url }) => {
   const [loggedIn, seLoggedIn] = useContext(UserContext);
   const [isDoctor, setIsDoctor] = useState(false);
   useEffect(() => {
-    fetch('http://localhost:4000/is-doctor', {
+    fetch('https://fathomless-journey-65246.herokuapp.com/is-doctor', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ email: loggedIn.email })

@@ -27,7 +27,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, bookingSubject,date}) => {
     data.service = bookingSubject;
     data.date = date;
     data.created = new Date()
-    fetch('http://localhost:4000/addAppointment', {
+    fetch('https://fathomless-journey-65246.herokuapp.com/addAppointment', {
       method: 'Post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(data)

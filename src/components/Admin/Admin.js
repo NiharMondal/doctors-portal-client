@@ -2,15 +2,16 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Card, Grid } from '@material-ui/core';
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form,Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
 import './Admin.css';
 const Admin = () => {
-  const [loggedIn, seLoggedIn] = useContext(UserContext);
+  const [loggedIn] = useContext(UserContext);
   const [admin, setAddmin] = useState(false);
   const [info, setInfo] = useState({});
-  const [file,setFile]=useState(null)
+  const [file, setFile] = useState(null);
+  const [alert, setAlert] = useState(false);
   const handleBlur = e => {
     const newInfo = { ...info };
     newInfo[e.target.name] = e.target.value;
@@ -21,7 +22,7 @@ const Admin = () => {
     setFile(newFile)
   };
   useEffect(() => {
-    fetch('http://localhost:4000/is-admin', {
+    fetch('https://fathomless-journey-65246.herokuapp.com/is-admin', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ email: loggedIn.email })
@@ -39,12 +40,15 @@ const Admin = () => {
     formData.append('email', info.email);
     formData.append('phone', info.phone);
 
-    fetch("http://localhost:4000/add-doctor", {
+    fetch("https://fathomless-journey-65246.herokuapp.com/add-doctor", {
       method: "post",
       body: formData
     })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        setAlert(data)
+        setAddmin(data)
+      })
 
       .catch(error => {
         console.error(error)
@@ -57,6 +61,9 @@ const Admin = () => {
       {admin ?
         <Grid item md={12} xs={12}>
           <h3 className="mb-5 pt-5"> <Link className="home " to="/"><FontAwesomeIcon icon={faHome} /> Home</Link></h3>
+          {
+            alert &&  <Alert className="text-center" variant="success" onClose={()=>setAlert(false)} dismissible>Doctor added successfully</Alert>
+          }
           <h2>Add Doctor</h2>
           <Card className="p-2">
             <Form onSubmit={handleSubmit}>
